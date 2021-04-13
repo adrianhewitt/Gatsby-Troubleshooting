@@ -1,3 +1,1 @@
-my website, based on
-
-`gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world`
+Figuring out why some images don't download / are not present from my WordPress CMS when GatsbyJS attempt to read them.
