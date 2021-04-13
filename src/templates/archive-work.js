@@ -126,30 +126,7 @@ export default Work
 
 export const pageQuery = graphql`
 query($skip: Int!, $limit: Int!, $slug: String) {
-    allWpCategory(filter: {slug: {eq: $slug}}) {
-      edges {
-        node {
-          id
-          slug
-          name
-          description
-          category {
-            order
-            logoWhite {
-              localFile {
-                publicURL
-              }
-              mediaDetails {
-                sizes {
-                    height
-                    width
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+
   allWpWork(
       sort: { 
           fields: [work___published],
