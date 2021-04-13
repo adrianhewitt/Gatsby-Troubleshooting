@@ -1,0 +1,177 @@
+.introduction {
+    /* padding-left: 5.3rem; */
+    /* padding-right: 5.3rem; */
+    /* padding-top: 6rem; */
+}
+.introduction p {
+    font-size: 2rem;
+}
+.introduction h1 {
+    /* font-size: 2.2rem; */
+    /* margin-bottom: 1.25em; */
+    display: none;
+}
+
+.workAll {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #eee;
+}
+
+.clipText {
+    /* margin: .25em; */
+    /* padding: 3rem 3rem; */
+    /* padding: 3.2rem 3.25rem; */
+    
+    /* background-image: url("../images/desk_crop.jpg"); */
+    /* background-size: cover; */
+    /* position: relative;
+    height:100%; */
+    /* background-position: center center; */
+    /* -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-pixelated;
+    image-rendering: pixelated; */
+    /* padding: 3.2rem 3.25rem 1rem 3.25rem; */
+}
+
+
+
+.clipTextWrapper {
+    /* font-size: 6em; */
+    /* font-weight: bold; */
+    /* line-height: 1; */
+    /* position: relative; */
+    /* display: inline-block; */
+    /* margin: .25em; */
+    /* padding: .5em .75em; */
+    /* text-align: center; */
+    /* color: #fff; */
+    /* background-color: rgba(0,0,0,0.5); */
+}
+
+.clipTextOverlay {
+    /* background-color: rgba(227, 114,98,0.4);
+    height:100%;
+    border-radius: 0.125rem; */
+    /* mix-blend-mode: color-dodge; */
+    /* mix-blend-mode: screen; */
+}
+
+.clipTextInner {
+    /* display:block;
+    font-size: 26.3vw;
+    font-weight: bold;
+    line-height: 1;
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right:0;
+    display: inline-block; */
+    /* margin: .25em; */
+    /* padding: .5em .75em; */
+    /* text-align: left;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* background-image: url("http://localhost:8888/IMG_7762.jpeg"); */
+    /* background-size: cover;
+    background-position: center center;
+    margin: 0; */
+    
+}
+
+.clipTextContent {
+    /* position: absolute;
+    bottom:3rem;
+    right: 1.25rem;
+    left: 1.25rem; */
+}
+
+.clipText:after {
+    /* position: absolute !important;
+    z-index: -1 !important;
+    top: 0.125em !important;
+    right: .125em !important;
+    bottom: .125em !important;
+    left: .125em !important;
+    background-color: #000 !important; */
+}
+
+.clipText:before {
+    /* z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit; */
+}
+
+
+
+.bgImageContainer {
+    /* position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: hidden; */
+}
+
+.bgImage {
+    /* height: 100%;
+    width: 100%; */
+}
+
+.bgImage img {
+    /* font-family: 'object-fit: cover; object-position: center;'; */
+}
+
+.arrowContainer {
+    /* position: absolute;
+    padding-left: 0;
+    padding-right: 0;
+    bottom: 0;
+    width: 100%; */
+}
+.arrowContainer img {
+    
+    /* height: 2.2rem;
+    width: 100%; */
+}
+.arrowContainer img polyline {
+    /* fill: #2222; */
+}
+
+@media screen and (max-width: 767px) {
+    .clipTextContent h1 {
+        /* font-size: 2.3rem; */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .clipText {
+        /* padding: 3.2rem 3.25rem 1rem 3.25rem; */
+    }
+    .clipTextContent {
+        /* padding: 2rem; */
+        /* font-size: 1.44rem; */
+        /* font-size: 2rem; */
+        /* right: 3rem; */
+        /* left: 3rem; */
+    }
+    .clipTextContent h1 {
+        /* font-size: 2.2rem;
+        margin-bottom: 1.25em; */
+    }
+    .bgImageContainer {
+        /* padding: 3.2rem 3.25rem 1rem 3.25rem; */
+    }
+    .arrowContainer {
+        /* padding-left: 3.25rem; */
+        /* padding-right: 3.25rem; */
+        /* bottom: 1rem; */
+    }
+}

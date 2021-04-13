@@ -1,0 +1,231 @@
+@tailwind base;
+/* @tailwind components; */
+@tailwind utilities;
+
+body {
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: plantin,sans-serif;
+    font-weight: 300;
+    line-height: 1.45;
+    color: #000;
+    background-color: #fffef2;
+    /* color: #EBEAED; */
+}
+
+html {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+p,ol,ul {
+    margin-bottom: 1.25em;
+    font-size: 1.3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: 'Arvo', sans-serif; */
+    /* font-weight: 600; */
+    font-family: futura-pt, sans-serif;
+    /* font-family: captain-comic, sans-serif; */
+    /* font-family: questa-sans, sans-serif; */
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 2.75rem 0 1rem;
+}
+    
+h1 {
+    /* margin-top: 0; */
+    /* font-size: 2.488em; */
+    /* font-size: 2.074em; */
+    font-size: 2rem;
+    /* font-family: plantin,sans-serif; */
+    /* font-weight: 300; */
+    text-transform: uppercase;
+    color: #222;
+}
+
+h2 {
+    /* font-size: 2.074em; */
+    /* font-family: plantin,sans-serif; */
+    /* font-weight: 300; */
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 500;
+}
+
+h3 {
+    /* font-size: 1.728em; */
+}
+
+h4 {
+    /* font-size: 1.44em; */
+}
+
+h5 {
+    /* font-size: 1.2em; */
+    /* margin-bottom:0; */
+}
+
+h6 {
+    /* font-size: 1em; */
+}
+
+small, .text_small {
+    font-size: 0.833em;
+}
+
+p a {
+    background-color: #F8E478;
+    color: #333;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.125rem;
+}
+p a:hover { 
+    background-color: #ED7C70;
+}
+
+
+
+footer {
+    background-color: #000;
+}
+
+
+nav.main .stamp {
+    line-height: 4rem;
+}
+
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+
+
+
+
+
+
+
+/* entire container, keeps perspective */
+.stamp {
+	perspective: 1000px;
+    z-index: 2;
+}
+/* flip the pane when hovered */
+.stamp:hover .wrapper, .stamp.hover .wrapper {
+    transform: rotateY(180deg);
+}
+
+
+/* flip speed goes here */
+.stamp .wrapper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.stamp .front, .stamp .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+    left: 0;
+    
+}
+
+/* front pane, placed above back */
+.stamp .front {
+	z-index: 2;
+	/* for firefox 31 */
+    transform: rotateY(0deg);
+    width:100%;
+
+    padding-left: 0.0625rem;
+    line-height: 3.8rem;
+}
+
+/* back, initially hidden pane */
+.stamp .back {
+	transform: rotateY(180deg);
+    width:100%;
+
+    line-height: 4.2rem;
+}
+
+.stamp-static {
+    display:inline-block;
+    background-color: #F8E478;
+    color: #222;
+    width: 2em;
+    height: 2em;
+    line-height: 1.76em;
+    text-align: center;
+    border-radius: 9999px;
+    margin-right: 0.25em;
+    padding-left: 0.0625em;
+}
+.stamp-static > span {
+    font-size: 1.38em;
+}
+
+/* purgecss ignore */
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+ }
+
+ /* 
+ good for testing out svg trace things
+ 
+ .gatsby-image-wrapper > img {
+    opacity: 1 !important;
+ }
+
+ .gatsby-image-wrapper picture {
+    display: none !important;
+ } */
+
+ .pagination {
+    font-size: 1.3rem;
+ }
+ .pagination svg {
+    width: 0.65em;
+    height: 0.65em;
+ }

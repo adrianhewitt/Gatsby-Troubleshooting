@@ -1,0 +1,27 @@
+
+.menu {
+    border-radius: 9999px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top:4.4rem;
+    font-size: 1.44em;
+    left:5rem;
+    /* margin-left: -2rem;
+    z-index: 1;
+    padding-left: 2.5rem; */
+    /* font-family: futura-pt, sans-serif; */
+    font-weight: 400;
+}
+
+.menu li:not(:first-child):before { 
+    content: ""; 
+    background-color: #fff;
+    border-radius: 9999px;
+    width: 0.5rem;
+    height: 0.5rem;
+    display: inline-block;
+    margin-right: 0.75rem;
+    line-height: 1.45;
+    margin-bottom: 0.2rem;
+}
